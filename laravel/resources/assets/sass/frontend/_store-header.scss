@@ -1,0 +1,18 @@
+
+.store-header {
+	.store-header-banner {
+		height: 270px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	
+	@media(max-width: $screen-xs-max) {
+		.store-header-banner {
+			display: none;
+		}
+	}
+}
+
+

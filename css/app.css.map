@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA;;;;EAIE;ACLF,WAAY;EACR,MAAM,EAAE,CAAC;;AAGb,gBAAiB;EACb,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,MAAM;;AAGvB,gEAAiE;EAC7D,MAAM,EAAE,iBAAiB",
+"sources": ["../laravel/resources/assets/sass/app.scss","../laravel/resources/assets/sass/includes/general.scss"],
+"names": [],
+"file": "app.css"
+}

@@ -1,0 +1,141 @@
+.footer {
+	color: #b2b2b2;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#202020+0,333333+33 */
+	background: #202020; /* Old browsers */
+	background: -moz-linear-gradient(top,  #202020 0%, #333333 33%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #202020 0%,#333333 33%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #202020 0%,#333333 33%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	a {
+		color: #b2b2b2;
+	}
+
+	.footer-affiliates {
+		float: right;
+
+		> * {
+			margin-left: 25px;
+			display: inline-block;
+		}
+	}
+
+	.footer-copyright {
+		font-size: 1.3rem;
+		color: #777;
+		float: left;
+	}
+
+	.footer-powered {
+		font-size: 1.3rem;
+		color: #777;
+		float: right;
+
+		a {
+			color: #a9a9a9;
+		}
+	}
+
+	.footer-row:last-child {
+		margin-top: 30px;
+	}
+
+	ul.footer-nav {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		float: left;
+
+		> li {
+			display: inline-block;
+			margin-right: 50px;
+
+			> a {
+				text-decoration: none;
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	@media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		ul.footer-nav {
+			li {
+				margin-right: 15px;
+			}
+
+			li:last-child {
+				margin-right: 0px;
+			}
+		}
+
+		.footer-affiliates > * {
+			margin-left: 10px;
+		}
+	}
+
+	@media(max-width: $screen-xs-max) {
+		padding-top: 35px;
+				
+		.footer-row:first-child {
+			margin-bottom: 35px;
+		}
+
+		hr {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border-color: #454545;
+		}
+
+		.footer-affiliates {
+			float: none;
+			width: 100%;
+			text-align: center;
+
+			> * {
+				margin-left: 0px;
+				display: inline-block;
+				width: 50%;
+				float: left;
+			}
+			
+		}
+
+		ul.footer-nav {
+			width: 100%;
+			margin-bottom: 0px;
+			> li {
+				display: block;
+				text-align: center;
+				margin-right: 0px;
+				padding: 10px 0px;
+				
+				a {
+					font-size: 1.8rem;
+				}
+			}
+		}
+
+		.footer-copyright {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.footer-powered {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+	}
+
+
+
+}
+
+
+

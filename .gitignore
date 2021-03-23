@@ -1,0 +1,15 @@
+/laravel/.netbeans.xml
+.idea
+/uploads
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+laravel/vendor/
+laravel/storage
+nbproject/
+laravel/packages
+sftp-config.json
+laravel/composer.lock
+/storage
+laravel/config/database.php

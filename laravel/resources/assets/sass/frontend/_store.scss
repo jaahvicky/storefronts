@@ -1,0 +1,530 @@
+
+.store-logo {
+	width: 90px;
+	height: 90px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.store-description-wrapper {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin-top: 25px;
+
+	> * {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.store-description-logo-wrapper {
+		width: 125px;
+		padding-top: 12px;
+	}
+
+	.store-logo {
+
+	}
+
+	.store-description-actions {
+		padding-top: 25px;
+		width: 360px;
+		text-align: right;
+	}
+
+	.store-description-title {
+		font-size: 3.6rem;
+	}
+
+	.store-description-description {
+		font-size: 1.6rem;
+		color: #666;
+	}
+
+	.store-description-contact {
+		margin-top: 10px;
+	}
+
+	@media(max-width: $screen-md-max) {
+		.store-description-actions {
+			width: 0px;
+		}
+		
+	}
+
+	@media(max-width: $screen-xs-max) {
+		display: block;
+		text-align: center;
+
+		> * {
+			display: block;
+		}
+
+		.store-description-logo-wrapper {
+			width: 100%;
+			text-align: center;
+			
+			.store-logo {
+				display: inline-block;
+			}
+		}
+
+		
+	}
+}
+
+
+//background-opacity div
+.sort-div-fade {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9001;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+
+}
+//menu sort
+.sort-menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translatez(0px);
+    -webkit-backface-visibility: hidden;
+    background-color: #e5e5e5;
+    width: 77%;
+    right: -90%;
+    z-index: 9002; 
+    -webkit-transition: right 1s ease-out;
+    -moz-transition: right 1s ease-out;
+    -o-transition: right 1s ease-out;
+    transition: right 1s ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-perspective: 1000;
+    border: 1px solid #e5e5e5;
+
+    .head-sort {
+	    background-color: #fff;
+	    padding: 5px;
+	    width: 100%;
+	    max-height: 57px;
+	    text-align: right;
+	    display: inline-block;
+
+	    h4.sort-heading {
+		    text-align: center;
+		    font-weight: 600;
+		}
+
+		.sort-btn {
+		    position: absolute;
+		    top: 7px;
+		    right: 7px;
+		}
+	}
+
+	.sort_line {
+	    font-size: 13px;
+	    color: #333333;
+	    text-align: center;
+	    line-height: normal;
+	    border-bottom: 1px solid #333;
+	}
+
+	.sort-check-btns{
+		padding: 10px;
+	    background: #fff;
+	}
+}
+
+//category menu on phones
+
+.head-category-menu {
+    background-color: #fff;
+    padding: 5px;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    display: inline-block;
+
+    h4.sort-heading {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.data-s-results{
+		display: block;
+	    text-align: center;
+	}
+
+	.sort-btn {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+	}
+}
+
+.store-categories ul li.want-a-store a {
+	color: #337ab7 !important;
+    font-size: 15px;
+    display: none;
+}
+
+.home-categories .store-categories ul li.want-a-store a {
+	display: block;
+}
+
+/* CONTENT PAGES */
+
+.page-content-wrapper {
+
+	width: 100%;
+	margin-top: 25px;
+
+	min-height: 450px;
+
+	.page-title {
+		font-size: 3.6rem;
+	}
+
+	.page-content-text-wrapper {
+		
+		color: #666666;
+		font-size: 1.6rem;
+		p {
+			padding-bottom: 15px;
+		}
+		@media (max-width: $screen-xs-max) {
+			padding-top: 25px;
+			text-align: center;
+			&.store-contact-details {
+				text-align: left;
+			}
+		}
+	}
+
+	.details-label {
+		min-width: 80px;
+		display: block;
+		float: left;
+		font-weight: bold;
+	}
+
+	.phone-nr {
+		color: #666666;
+		text-decoration: none;
+		cursor: default;
+	}
+
+	.store-description-wrapper {
+		margin-bottom: 25px;
+	}
+
+	.store-contact-details {
+		.details-label {
+			@media (max-width: $screen-xs-max) {
+				
+			}
+		}
+	}
+
+	ul {
+		padding-left: 20px;
+		list-style-position: outside;
+	}
+
+	@media (max-width: $screen-xs-max) {
+
+		min-height: auto;
+
+	}
+
+	.panel-group {
+		margin-top: 20px;
+
+		.panel-heading {
+			padding: 0;
+		}
+
+		.panel-title {
+			a { 
+				padding: 10px 15px;
+				display: block;
+			}
+		}
+	}
+
+}
+
+/* OPEN STORE */
+
+.open-a-store {
+
+	#sp-intro, #sp-key-features {
+		margin-top: 80px;
+	}
+
+	#sp-key-features {
+		margin-bottom: $lg-mar;
+	}
+
+	.sp-subtitle, .sp-title {
+		margin-bottom: 80px;
+		font-weight: bold;
+	}
+
+	h2.sp-title {
+		margin-top: 0;
+		font-weight: 600;
+	}
+
+    .sp-dark-bg {
+		a {
+		  color: #222; }
+		  a:hover {
+		    color: #0099f1; }
+		h2 {
+		  color: #fff; }
+  	}
+
+  	.material-icons.sp-btn-ic {
+		font-size: 135%;
+		vertical-align: middle;
+		margin-left: 8px;
+	}
+
+	& ~ .store-footer {
+		margin-top: 0;
+	}
+
+	/* store banner ================================== */
+
+
+	#sp-store-banner {
+		background: url(../images/store/hero_banner.jpg) fixed no-repeat;
+		@include backgroundSize(cover);
+		min-height: 400px;
+
+		h1 {
+			color: #fff;
+			font-size: 300%;
+			line-height: 1.5;
+			padding: 80px 0 0;
+			margin-top: 0;
+			font-weight: 600;
+			margin-bottom: 80px;
+		}
+	}
+
+ 	.sp {
+		&-cta-box {
+			max-width: 300px;
+			background: #ffffff;
+			padding: $md-pad;
+			margin: 0 auto $xl-mar;
+			@include borderRadius(21px);
+
+			h3 {
+				font-size: 150%;
+				margin: 0 0 $sm-mar;
+				font-weight: bold;
+			}
+
+			p {
+				margin-bottom: $sm-mar;
+			}
+		}
+	}
+
+	/* selling points ================================== */
+
+
+	.sp-selling-points  {
+		img {
+			@include borderRadius(21px);
+			max-width: 100%;
+		}
+
+		h3 {
+			font-size: 17.7px;
+    		font-weight: bold;
+		}
+
+		p {
+			margin-bottom: 0;	
+		}
+	}
+
+	/* more features ================================== */
+
+
+	.sp-feature-row {
+		i {
+		font-size: 280%;
+		color: rgba(255, 255, 255, 0.8);
+		padding: $sm-pad;
+		margin: 0 $md-mar $lg-mar 0;
+		float: left;
+		@include borderRadius(18px);
+
+			&.sp-customize {
+				background: $color-blue;
+			}
+
+			&.sp-ssl {
+				background: $color-green;
+			}
+
+			&.sp-logistics {
+				background: $color-pink;
+			}
+
+			&.sp-support {
+				background: $color-orange;
+			}
+		}
+
+		h3 {
+			font-size: 17.7px;
+    		font-weight: bold;
+		}
+	}
+
+	/* faq ================================== */
+
+
+	#sp-faq  {
+		width: 100%;
+		background: $dark-gray;
+		
+		h2 {
+			margin-top: $xl-mar;
+		}
+		ol {
+			margin-bottom: $xl-mar;
+			counter-reset: ol-counter;
+			padding: 0;
+		}
+		li {
+			color: #fff;
+			padding: $sm-pad 0;
+			border-bottom: 1px solid $color-subtext;
+			list-style-type: none;
+
+			&:before {
+				content: counter(ol-counter);
+	    		counter-increment: ol-counter;
+	    		color: $color-green;
+	    		font-weight: 700;
+				margin: 0 $xs-mar $sm-mar 0;
+			}
+
+			&:active i {
+				@include transformer(180deg);
+			}
+
+			div {
+				color: $color-subtext;
+				padding: $xs-pad 0 0 23px;
+			}
+
+			i {
+				color: $color-subtext;
+				clear: both;
+			}
+		}
+	}
+
+
+	/* register ================================== */
+
+
+	#sp-register {
+		width: 100%;
+		background: $color-blue;
+
+		h2 {
+			font-size: 200%;
+			margin: 0;
+			line-height: 46px;
+			}
+
+		a {
+			float: none;
+			}
+
+		.sp-cto {
+			padding: $lg-pad 0;
+			.btn {
+				width: 230px;
+  				height: 34px;
+			}
+		}
+	}
+
+	// responsiveness polishing
+
+	.dropdown-menu {
+		border: 0px solid rgba(0,0,0,.15);
+			&>li>a {
+		    	padding: 10px 20px;
+		    	text-decoration: none;
+			}
+	}
+
+	/* media queries ================================== */
+
+	@media (max-width: 767px) {
+		#sp-store-banner h1 {
+		    font-size: 250%;
+		    line-height: 1.4;
+		}
+		#sp-store-banner {
+		    background: url(../images/store/hero_banner.jpg) 50% 30% fixed no-repeat;
+		}
+		.sp-feature-row .col-sm-6 {
+		    clear: both;
+		    padding: 0 50px;
+		}
+		.sp-selling-points img {
+		    max-width: 65%;
+		}
+		#sp-register {
+		    text-align: center;
+		    h2 {
+		    	margin-bottom: 50px;
+		    }
+		}
+		#sp-register a {
+		    float: none;
+		    margin: 0 auto;
+		}
+
+	}
+
+	@media (max-width: 375px) {
+		.sp-feature-row {
+			text-align: center;
+			i {
+			float: none;	
+			margin: $sm-mar auto;
+			}
+
+			h3 {
+				padding-top: $xs-pad;
+			}
+		}
+	}
+
+}

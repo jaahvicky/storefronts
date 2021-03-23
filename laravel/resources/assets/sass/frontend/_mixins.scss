@@ -1,0 +1,46 @@
+/* Mixins ==== */
+
+@mixin sharpText(){
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+@mixin boxShadow($boxShadow){
+	-webkit-box-shadow: $boxShadow;
+	-moz-box-shadow: $boxShadow;
+	-ms-box-shadow: $boxShadow;
+	-o-box-shadow: $boxShadow;
+	box-shadow: $boxShadow;	
+}
+
+@mixin borderRadius($borderRadius){
+	-webkit-border-radius: $borderRadius;
+	-moz-border-radius: $borderRadius;
+	-ms-border-radius: $borderRadius;
+	-o-border-radius: $borderRadius;
+	border-radius: $borderRadius;	
+}
+
+@mixin backgroundSize($backgroundSize){
+	-webkit-background-size: $backgroundSize;
+	-moz-background-size: $backgroundSize;
+	-ms-background-size: $backgroundSize;
+	-o-background-size: $backgroundSize;
+	background-size: $backgroundSize;	
+}
+
+@mixin trans($transition){
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;	
+}
+
+@mixin transformer ($transform){
+		-webkit-transform: rotate($transform);
+	  	-moz-transform: rotate($transform);
+	  	-o-transform: rotate($transform);
+	  	-ms-transform: rotate($transform);         
+	  	transform: rotate($transform);
+}

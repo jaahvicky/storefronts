@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;EAIE;AACF;;;EAGE;AAEF,yBAA0B;EACtB,KAAK,EAAE,IAAI",
+"sources": ["../laravel/resources/assets/sass/ownerportal.scss"],
+"names": [],
+"file": "ownerportal.css"
+}

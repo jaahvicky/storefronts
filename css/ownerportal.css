@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Jun 2016, 5:54:02 PM
+    Author     : kevin
+*/
+.form-control.cell-prefix {
+  width: 75px; }
+
+/*# sourceMappingURL=ownerportal.css.map */
+
+.par-md {
+    max-width: 680px;
+    margin: 0 auto 30px;
+}
+
+.opacity {
+	opacity: 0.4;
+}
+
+/* STORE SETUP */
+
+.underline {
+    text-decoration: underline;
+}
+
+.sp-store-setup .signup-btn-group {
+    display: inline-block;
+    width: 100%;
+}
+
+.sp-store-setup .signup-btn-group .btn, .sp-store-setup .signup-btn-group a {
+    margin-right: 20px;
+} 
+
+.sp-store-setup .signup-btn-group a {
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .sp-store-setup .signup-btn-group a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sp-store-setup .signup-btn-group .btn {
+        margin-bottom: 10px;
+        float: none !important;
+    }
+
+    .sp-store-setup .signup-btn-group a {
+        padding: 5px 0;
+    }
+
+    .sp-store-setup .signup-btn-group .pull-left {
+        float: none !important;
+    }
+}
+
+/* payment details ================================== */
+
+.sp-store-setup input#terms_conditions {
+
+    float: left;
+    display: block;
+    width: auto;
+    margin-right: 8px;
+    margin-top: 5px;
+
+}
+
+@media (max-width: 767px) {
+	.sp-store-setup #form-update-payment-details #section-merchant p {
+		text-align: left !important;
+	}
+}
+
+.accept-terms.has-error {
+    border: 1px solid #a94442;
+    padding-top: 7px;
+}

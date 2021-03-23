@@ -1,0 +1,66 @@
+.header-outter {
+    width: 100%;
+    border-bottom: 1px solid $color-border;
+}
+
+.error-content {    
+    margin: $lg-mar 0;
+    text-align: center;
+    
+    .error {
+        &-title {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: $md-mar;
+            
+            @media (min-width: 425px){
+                font-size: 5rem;
+            }
+        }
+        
+        &-message {
+            font-size: 1.8rem;
+            color: $color-subtext;
+            line-height: 1.7;
+        }
+        
+        &-options a {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: $sm-mar;
+            
+            @media (min-width: 425px){
+                max-width: 200px;
+            }
+            
+            &:first-child {
+            margin-right: $sm-mar;
+            }
+        }
+        
+        &-image {
+            width: 200px;
+            height: auto;
+            color: $color-border;
+            margin-bottom: $sm-mar;
+        }
+        
+        &-code {
+            font-size: 1.6rem;
+            color: #999;
+            margin-bottom: $md-mar;
+            
+            strong {
+                font-weight: 600;
+                
+                &.missing {
+                    color: $color-orange;
+                }
+                
+                &.closed {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}
